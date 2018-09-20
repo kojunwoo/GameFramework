@@ -26,7 +26,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
 	SDL_FreeSurface(pTempSurface);
 	SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
-	
+
 	m_sourceRectangle.w = 128;
 	m_sourceRectangle.h = 82;
 
@@ -41,7 +41,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 
 void Game::render()
 {
-	
+
 	SDL_RenderClear(m_pRenderer);
 
 	SDL_RenderCopy(m_pRenderer, m_pTexture, &m_sourceRectangle, &m_destinationRectangle);
@@ -49,7 +49,7 @@ void Game::render()
 	SDL_RenderPresent(m_pRenderer);
 }
 
-void Game::update(){
+void Game::update() {
 	m_sourceRectangle.x = 128 * int(((SDL_GetTicks() / 80) % 6));
 }
 
