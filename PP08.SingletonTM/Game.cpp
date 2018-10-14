@@ -6,7 +6,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	{
 
 
-		m_pWindow = SDL_CreateWindow("PP07.TextureManager",
+		m_pWindow = SDL_CreateWindow("PP08.SingletonTM",
 
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
@@ -22,9 +22,10 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 		return false;
 	}
 
-	TheTextureManager::Instance()->load("assets/animate-alpha.png", "animate", m_pRenderer);
+	TheTextureManager::Instance()->load("assets/dog sprite.png", "animate", m_pRenderer);
+	TheTextureManager::Instance()->load("assets/New Piskel.png", "background", m_pRenderer);
 
-	SDL_SetRenderDrawColor(m_pRenderer, 255, 0, 0, 255);
+	SDL_SetRenderDrawColor(m_pRenderer, 200, 200, 255, 100);
 
 
 	m_bRunning = true;
@@ -36,14 +37,23 @@ void Game::render()
 
 
 	SDL_RenderClear(m_pRenderer);
-	TheTextureManager::Instance()->draw("animate", 0, 0, 128, 82, m_pRenderer);
-	TheTextureManager::Instance()->drawFrame("animate", 100, 100, 128, 82, 1,
+	
+	
+
+	TheTextureManager::Instance()->draw("background", 0, 0, 640, 480, m_pRenderer);
+
+
+	TheTextureManager::Instance()->drawFrame("animate", 300, 290, 43, 110, 1,
 		m_currentFrame, m_pRenderer);
+	
+	
+
 	SDL_RenderPresent(m_pRenderer);
 }
 
 void Game::update() {
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+	m_currentFrame = int(((SDL_GetTicks() / 100) % 4));
+	m_currentFrame2 = int(((SDL_GetTicks() / 70) % 6));
 }
 
 void Game::clean()
