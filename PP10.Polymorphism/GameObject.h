@@ -12,6 +12,7 @@ public:
 	virtual void draw(SDL_Renderer* pRenderer);
 	virtual void update();
 	virtual void clean();
+	virtual void movingspeed();
 
 protected:
 	std::string m_textureID;
