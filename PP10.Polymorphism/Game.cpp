@@ -6,7 +6,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	{
 
 
-		m_pWindow = SDL_CreateWindow("PP09.Inheritance",
+		m_pWindow = SDL_CreateWindow("PP10.Polymorphism",
 
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
@@ -25,6 +25,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 
 	TheTextureManager::Instance()->load("assets/dog sprite.png", "animate", m_pRenderer);
 	TheTextureManager::Instance()->load("assets/animate2-alpha.png", "animate2", m_pRenderer);
+	TheTextureManager::Instance()->load("assets/eyemonster.png", "animate3", m_pRenderer);
 	
 	SDL_SetRenderDrawColor(m_pRenderer, 200, 200, 255, 100);
 
@@ -33,16 +34,21 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	m_player = new Player();
 	m_enemy = new Enemy();
 	m_monster = new Monster();
+	m_monster2 = new Monster2();
 
 	m_go->load(100, 100, 43, 110, "animate");
 	m_player->load(300, 300, 43, 110, "animate");
 	m_enemy->load(0, 0, 43, 110, "animate");
-	m_monster->load(200, 200, 128, 82, "animate2");
+	m_monster->load(200, 200, 71, 46, "animate3");
+	m_monster2->load(300, 300, 71, 46, "animate3");
+
 
 	m_gameObjects.push_back(m_go);
 	m_gameObjects.push_back(m_player);
 	m_gameObjects.push_back(m_enemy);
 	m_gameObjects.push_back(m_monster);
+	m_gameObjects.push_back(m_monster2);
+
 
 	m_bRunning = true;
 	return true;

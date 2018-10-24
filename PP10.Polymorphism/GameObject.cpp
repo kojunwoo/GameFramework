@@ -23,11 +23,7 @@ void GameObject::update()
 	m_currentFrame = int(((SDL_GetTicks() / 100) % 4));
 }
 
+
 void GameObject::clean()
 {
-}
-
-void GameObject::movingspeed()
-{
-
 }
