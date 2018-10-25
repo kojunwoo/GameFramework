@@ -1,13 +1,10 @@
 #include "Enemy.h"
 #include "GameObject.h"
 
-Enemy::Enemy(const LoaderParams* pParams);
+Enemy::Enemy(const LoaderParams* pParams) :
 SDLGameObject(pParams)
 {
-}
 
-Enemy::Enemy(const LoaderParams * pParams)
-{
 }
 
 void Enemy::draw()
@@ -22,7 +19,7 @@ void Enemy::update()
 	m_currentFrame = int(((SDL_GetTicks() / 100) % 4));
 }
 
-void Player::clean()
+void Enemy::clean()
 {
 
 }

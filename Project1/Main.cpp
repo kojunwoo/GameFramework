@@ -1,11 +1,12 @@
 #include "Game.h"
 
+
 Game* g_game = 0;
 
 int main(int argc, char*argv[])
 {
 	std::cout << "game init attempt...\n";
-	if (TheGame::Instance()->init("Chapter 11", 100, 100, 640, 480, false);
+	if (TheGame::Instance()->init("Chapter 11", 100, 100, 640, 480, false))
 	{
 		std::cout << "game init success!\n";
 		while (TheGame::Instance()->running())

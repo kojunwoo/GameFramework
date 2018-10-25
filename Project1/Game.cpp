@@ -1,5 +1,7 @@
 #include "Game.h"
 
+Game* Game::s_pInstance = 0;
+
 bool Game::init(const char*title, int xpos, int ypos, int width, int height, bool fullscreen)
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0)
@@ -38,15 +40,6 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 }
 
 
-static Game* Instance()
-{
-	if (s_pInstance == 0)
-	{
-		s_pInstance = new Game();
-		return s_pInstance;
-	}
-	return s_pInstance;
-}
 
 
 void Game::render()
@@ -56,7 +49,7 @@ void Game::render()
 	for (std::vector<GameObject*>::size_type i = 0;
 		i != m_gameObjects.size(); i++)
 	{
-		m_gameObjects[i]->draw(m_pRenderer);
+		m_gameObjects[i]->draw();
 	}
 	SDL_RenderPresent(m_pRenderer);
 }

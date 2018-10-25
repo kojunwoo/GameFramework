@@ -1,7 +1,7 @@
 #pragma once
 
 #include "LoaderParams.h"
-
+#include "GameObject.h"
 class SDLGameObject : public GameObject
 {
 public :
