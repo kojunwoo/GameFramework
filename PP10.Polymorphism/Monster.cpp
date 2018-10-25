@@ -46,9 +46,5 @@ void Monster2::update()
 
 void GameObject::movingspeed()
 {
-	if (new Monster)
-	{
-		m_x += 1;
-	}
 
 }
