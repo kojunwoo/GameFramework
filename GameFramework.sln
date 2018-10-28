@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP10.Polymorphism", "PP10.P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP11.AbstractClass", "Project1\Project1.vcxproj", "{05184231-B58F-429F-8A29-F61EE451556E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP12.Vector2D", "PP12.Vector2D\PP12.Vector2D.vcxproj", "{C5709011-5FFC-40BB-8AD9-44D229E4010C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{05184231-B58F-429F-8A29-F61EE451556E}.Release|x64.Build.0 = Release|x64
 		{05184231-B58F-429F-8A29-F61EE451556E}.Release|x86.ActiveCfg = Release|Win32
 		{05184231-B58F-429F-8A29-F61EE451556E}.Release|x86.Build.0 = Release|Win32
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Debug|x64.ActiveCfg = Debug|x64
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Debug|x64.Build.0 = Debug|x64
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Debug|x86.Build.0 = Debug|Win32
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Release|x64.ActiveCfg = Release|x64
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Release|x64.Build.0 = Release|x64
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Release|x86.ActiveCfg = Release|Win32
+		{C5709011-5FFC-40BB-8AD9-44D229E4010C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

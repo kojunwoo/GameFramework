@@ -8,7 +8,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	{
 
 
-		m_pWindow = SDL_CreateWindow("PP11.AbstractClass",
+		m_pWindow = SDL_CreateWindow("PP12.Vector2D",
 
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
