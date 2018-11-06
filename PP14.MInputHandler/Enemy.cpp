@@ -1,6 +1,7 @@
 #include "Enemy.h"
 #include "GameObject.h"
 #include "InputHandler.h"
+#include "Vector2D.h"
 
 Enemy::Enemy(const LoaderParams* pParams) :
 	SDLGameObject(pParams)
