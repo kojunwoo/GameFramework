@@ -1,15 +1,11 @@
 #include "Game.h"
 
-
 Game* g_game = 0;
 
 const int FPS = 60;
 const int DELAY_TIME = 1000.0f / FPS;
 
-
 Uint32 frameStart, frameTime;
-
-
 
 int main(int argc, char*argv[])
 {
@@ -30,13 +26,6 @@ int main(int argc, char*argv[])
 				SDL_Delay((int)(DELAY_TIME - frameTime));
 			}
 		}
-		/*while (TheGame::Instance()->running())
-		{
-		TheGame::Instance()->handleEvents();
-		TheGame::Instance()->update();
-		TheGame::Instance()->render();
-		SDL_Delay(10);
-		}*/
 	}
 	else {
 		std::cout << "game init failure - " << SDL_GetError() << "\n";

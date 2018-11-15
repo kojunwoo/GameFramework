@@ -1,5 +1,4 @@
 #include "SDLGameObject.h"
-#include "TextureManager.h"
 #include "Game.h"
 
 SDLGameObject::SDLGameObject(const LoaderParams* pParams) : GameObject(pParams),

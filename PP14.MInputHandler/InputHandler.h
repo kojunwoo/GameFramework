@@ -29,20 +29,15 @@ public:
 	{
 		return m_mousePosition;
 	}
-	
-	
 
 private:
 	InputHandler();
 	~InputHandler() {}
 	
-	
 	Vector2D* m_mousePosition;
 	std::vector<bool> m_mouseButtonStates;
 	static InputHandler* s_pInstance;
 	const Uint8* m_keystates;
-
-
 };
 
 typedef InputHandler TheInputHandler;
