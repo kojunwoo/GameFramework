@@ -1,3 +1,4 @@
+
 #pragma once
 
 #include <iostream>
@@ -5,7 +6,7 @@
 #include "TextureManager.h"
 #include "Player.h"
 #include "Enemy.h"
-
+#include "GameStateMachine.h"
 
 class Game
 {
@@ -18,8 +19,6 @@ public:
 	bool running() { return m_bRunning; }
 	void quit();
 
-	GameStateMachine* m_pGameStateMachine;
-
 	static Game* Instance()
 	{
 		if (s_pInstance == 0)
@@ -31,12 +30,12 @@ public:
 	}
 	SDL_Renderer* getRenderer()const { return m_pRenderer; }
 
-
 private:
 	static Game* s_pInstance;
 
 	SDL_Window * m_pWindow;
 	SDL_Renderer*m_pRenderer;
+	GameStateMachine* m_pGameStateMachine;
 
 	int m_currentFrame;
 	int m_currentFrame2;

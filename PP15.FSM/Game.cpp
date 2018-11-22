@@ -1,9 +1,7 @@
 #include "Game.h"
 #include "InputHandler.h"
-#include "GameStateMachine.h"
-#include "MenuState.h"
 #include "PlayState.h"
-
+#include "MenuState.h"
 
 Game* Game::s_pInstance = 0;
 
@@ -13,7 +11,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	{
 
 
-		m_pWindow = SDL_CreateWindow("PP15.FSM",
+		m_pWindow = SDL_CreateWindow("PP14.MInputHandler",
 
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
@@ -50,23 +48,23 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 void Game::render()
 {
 	SDL_RenderClear(m_pRenderer);
+	m_pGameStateMachine->render();
 	for (std::vector<GameObject*>::size_type i = 0;
 		i != m_gameObjects.size(); i++)
 	{
 		m_gameObjects[i]->draw();
 	}
-	m_pGameStateMachine->render();
 	SDL_RenderPresent(m_pRenderer);
 }
 
 
 void Game::update() {
+	m_pGameStateMachine->update();
 	for (std::vector<GameObject*>::size_type i = 0;
 		i != m_gameObjects.size(); i++)
 	{
 		m_gameObjects[i]->update();
 	}
-	m_pGameStateMachine->update();
 }
 
 void Game::clean()

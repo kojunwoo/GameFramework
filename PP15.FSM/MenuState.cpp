@@ -1,16 +1,15 @@
-#include "MenuState.h"
-#include <iostream>
+﻿#include "MenuState.h"
 
 const std::string MenuState::s_menuID = "MENU";
-
+MenuState* MenuState::s_pInstance = nullptr;
 void MenuState::update()
 {
-
+	// nothing for now
 }
 
 void MenuState::render()
 {
-
+	// nothing for now
 }
 
 bool MenuState::onEnter()

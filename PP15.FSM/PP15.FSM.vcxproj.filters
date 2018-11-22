@@ -74,10 +74,10 @@
     <ClInclude Include="Vector2D.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MenuState.h">
+    <ClInclude Include="GameState.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="GameState.h">
+    <ClInclude Include="MenuState.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="PlayState.h">

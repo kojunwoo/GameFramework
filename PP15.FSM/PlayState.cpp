@@ -1,12 +1,14 @@
 #include "PlayState.h"
-#include <iostream>
-const std::string PlayState::s_playID = "PLAY";
 
+const std::string PlayState::s_playID = "PLAY";
+PlayState* PlayState::s_pInstance = nullptr;
 void PlayState::update()
 {
+	// nothing for now
 }
 void PlayState::render()
 {
+	// nothing for now
 }
 bool PlayState::onEnter()
 {
