@@ -39,6 +39,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP16.MenuState", "PP16.Menu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP17.PlayState", "PP17.PlayState\PP17.PlayState.vcxproj", "{B8F472AF-5447-4A50-8745-2390FDA55058}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP18.PauseState", "PP18.PauseState\PP18.PauseState.vcxproj", "{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PP19.GameOverState", "PP19.GameOverState\PP19.GameOverState.vcxproj", "{257AD65A-BED4-4398-92EA-42C4E43E77FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +195,22 @@ Global
 		{B8F472AF-5447-4A50-8745-2390FDA55058}.Release|x64.Build.0 = Release|x64
 		{B8F472AF-5447-4A50-8745-2390FDA55058}.Release|x86.ActiveCfg = Release|Win32
 		{B8F472AF-5447-4A50-8745-2390FDA55058}.Release|x86.Build.0 = Release|Win32
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Debug|x64.ActiveCfg = Debug|x64
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Debug|x64.Build.0 = Debug|x64
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Debug|x86.ActiveCfg = Debug|Win32
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Debug|x86.Build.0 = Debug|Win32
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Release|x64.ActiveCfg = Release|x64
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Release|x64.Build.0 = Release|x64
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Release|x86.ActiveCfg = Release|Win32
+		{1D4F7D3D-3147-483F-B013-E4A0BBF7D7D2}.Release|x86.Build.0 = Release|Win32
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Debug|x64.ActiveCfg = Debug|x64
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Debug|x64.Build.0 = Debug|x64
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Debug|x86.Build.0 = Debug|Win32
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Release|x64.ActiveCfg = Release|x64
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Release|x64.Build.0 = Release|x64
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Release|x86.ActiveCfg = Release|Win32
+		{257AD65A-BED4-4398-92EA-42C4E43E77FE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
