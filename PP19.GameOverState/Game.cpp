@@ -11,7 +11,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	{
 
 
-		m_pWindow = SDL_CreateWindow("PP18.PauseState",
+		m_pWindow = SDL_CreateWindow("PP19.GameOverState",
 
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
@@ -25,14 +25,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 		m_bRunning = false;
 		return false;
 	}
-
-	//TheTextureManager::Instance()->load("assets/dog sprite.png", "animate2", m_pRenderer);
-	//TheTextureManager::Instance()->load("assets/eyemonster.png", "animate3", m_pRenderer);
-
 	SDL_SetRenderDrawColor(m_pRenderer, 200, 200, 255, 100);
-
-	//m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 43, 110, "animate2")));
-	//m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 71, 46, "animate3")));
 
 	m_pGameStateMachine = new GameStateMachine();
 	m_pGameStateMachine->changeState(MenuState::Instance());

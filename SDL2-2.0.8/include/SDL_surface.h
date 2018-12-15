@@ -191,14 +191,12 @@ extern DECLSPEC void SDLCALL SDL_UnlockSurface(SDL_Surface * surface);
  */
 extern DECLSPEC SDL_Surface *SDLCALL SDL_LoadBMP_RW(SDL_RWops * src,
                                                     int freesrc);
-
 /**
  *  Load a surface from a file.
  *
  *  Convenience macro.
  */
 #define SDL_LoadBMP(file)   SDL_LoadBMP_RW(SDL_RWFromFile(file, "rb"), 1)
-
 /**
  *  Save a surface to a seekable SDL data stream (memory or file).
  *
